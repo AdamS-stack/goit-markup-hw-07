@@ -11,7 +11,7 @@
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./css/normalize.css" />
-        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/index.min.css" />
     </head>
     <body class="body">
         <header class="header">
@@ -741,27 +741,26 @@
                     </ul>
                 </section>
                 <section class="newsletter-footer">
-                    <form class="form-footer">
-                        <label class="form-footer__label-footer">
-                            <p class="form-footer__label-text">
+                    <form>
+                        <label class="newsletter-footer__label-footer">
+                            <p class="newsletter-footer__label-text">
                                 Zapisz się do newslettera
                             </p>
-                            <div class="form-footer__newsletter-wrapper">
+                            <div class="newsletter-footer__newsletter-wrapper">
                                 <input
                                     placeholder="E-mail"
-                                    class="form-footer__footer-input"
+                                    class="newsletter-footer__footer-input"
                                     type="email"
                                     name="Write your mail"
                                     required
                                 />
-                                <button
-                                    class="form-footer__button-newsletter"
-                                    type="submit"
-                                >
-                                    <p class="form-footer__button-text">
+                                <button class="button-newsletter" type="submit">
+                                    <p class="button-newsletter__button-text">
                                         Zapisz się
                                     </p>
-                                    <svg class="form-footer__icon-newsletter">
+                                    <svg
+                                        class="button-newsletter__icon-newsletter"
+                                    >
                                         <use
                                             href="./images/icons.svg#icon-newsletter"
                                         ></use>
