@@ -27,6 +27,7 @@
     flex-direction: column;
     gap: 6px;
 }
+
 .input-wrapper__text {
     display: flex;
     margin-block-end: 0;
@@ -44,6 +45,14 @@
     padding-left: 50px;
     border: 1px solid $border-color6;
     transition: border-color $transition $transition-timing-function;
+    &:focus {
+        outline: 0;
+        border-color: $color-text3;
+    }
+}
+
+.input-wrapper__label:has(.input-wrapper__field:focus) .input-wrapper__icon {
+    fill: $color-text3;
 }
 
 .input-wrapper__icon {
@@ -63,6 +72,12 @@
     padding-top: 15px;
     border-radius: 4px;
     transition: border-color $transition $transition-timing-function;
+
+    &:focus {
+        outline: 0;
+
+        border-color: $border-color3;
+    }
 }
 
 .checkbox-wrapper {
@@ -93,6 +108,9 @@
 .checkbox-wrapper__checkbox {
     visibility: hidden;
     transition: background-color $transition $transition-timing-function;
+    &:checked {
+        background-color: $background-color6;
+    }
 }
 .checkbox-wrapper__check {
     width: 16px;
@@ -109,27 +127,4 @@
 }
 .checkbox-wrapper__text-link {
     color: $color-text3;
-}
-.form .input-wrapper__field {
-    &:focus {
-        outline: 0;
-    }
-}
-.form .input-wrapper__field--area {
-    &:focus {
-        outline: 0;
-    }
-}
-.input-wrapper__field {
-    &:focus {
-        border-color: $border-color3;
-    }
-}
-.input-wrapper__label:has(input:focus) .input-wrapper__icon {
-    fill: $color-text3;
-}
-.input-wrapper__field--area {
-    &:focus {
-        border-color: $border-color3;
-    }
 }
